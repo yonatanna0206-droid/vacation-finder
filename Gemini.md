@@ -18,107 +18,72 @@ TripSync solves this problem by collecting the user's personal preferences, anal
 * **Site language \& direction:** English, LTR
 
 ## 2\. Pages \& Features
-Screen 1:
+Screen 1
+Screen Goal: Allow the user to create an account for the website.
+The user will see:
+- Website Logo + Slogan:
+  - "Find the vacation that fits you perfectly"
+- Large button: Create Account / Sign Up
+The user will be able to:
+- Create an account.
+Screen 2
 Screen Goal: Allow the user to start a personalized vacation search.
 The user will see:
-Site logo + Tagline:
-"Find the vacation that fits you perfectly"
-Large button: Create a new vacation
-And will be able to:
+- Website Logo + Slogan:
+  - "Find the vacation that fits you perfectly"
+- Large button: Create New Vacation
+The user will be able to:
+- Start a new trip planning process.
+- Join an existing group created by a friend.
+- View a short explanation of how the system works.
+Top Navigation Bar (Appears on all screens):
+- Home
+- My Vacations: A dedicated section to view all added vacations, including selected preferences and generated results.
+- About Us
+Screen 3
+*Screen Goal: Collect information about user preferences to find a suitable vacation.The user will see a form with:
+- Maximum budget per night (Slider)
+- Number of nights (Input field)
+- Preferred vacation type:
+  - Beach / Relaxation (Baten-Gav)
+  - City break
+  - Nature & Adventure
+  - Nightlife
+- Weather preference:
+  - 10°C and below
+  - 10°C to 15°C
+  - 15°C to 25°C
+  - 25°C to 30°C
+  - 30°C and above
+  - Button: Save PreferencesAnd will be able to:
+- Enter their preferences
+- Edit or update the data
+- Start searching for matching vacations
 
-Start a new plan
-
-Join a group created by a friend
-
-View a short explanation of how the system works
-
-Top Menu (appears on all screens):
-
-Home Page
-
-My Vacations: where users can see all the vacations they added, including their selected preferences and results
-
-About Us / Site Info
-
-Screen 2:
-Screen Goal: Collect information about user preferences to find a suitable vacation.
-The user will see a form with:
-
-Maximum budget per night (Slider)
-
-Number of nights (Input field)
-
-Preferred vacation type:
-
-Beach / Relaxation (Baten-Gav)
-
-City break
-
-Nature & Adventure
-
-Nightlife
-
-Weather preference:
-
-10°C and below
-
-10°C to 15°C
-
-15°C to 25°C
-
-25°C to 30°C
-
-30°C and above
-Button: Save Preferences
-And will be able to:
-
-Enter their preferences
-
-Edit or update the data
-
-Start searching for matching vacations
-
-Screen 3:
+Screen 4
 Screen Goal: Display destinations ranked by compatibility with user preferences.
 The user will see a list of destinations with:
-
-Destination name
-
-Average price
-
-Destination image
-
-Vacation type
-
-Match score (e.g., 87%)
-
-The top-matching destination will be highlighted.
-And will be able to:
-
-Compare two destinations
-
-Click on a destination for more details
-
-Save a destination to favorites
-
-Screen 4:
-Screen Goal: Display full information about a specific destination and make a final decision.
+- Destination name
+- Average price
+- Destination image
+- Vacation type
+- Match score (1–5 star rating)
+- (The top-matching destination will be highlighted)
+The user will be able to:
+- Compare two destinations.
+- Click on a destination for more details.
+- Save a destination to Favorites.
+Screen 5
+Screen Goal: Display full details for a specific destination and enable a final decision.
 The user will see:
-
-Destination name + Destination image
-
-Average temperature
-
-Main attractions
-
-Pros and cons
-And will be able to:
-
-Confirm the destination as the final choice (Add vacation)
-
-Compare against another destination
-
-Return to results
+- Destination name + Destination image
+- Average temperature
+- Top attractions
+- Pros and cons
+The user will be able to:
+- Confirm the destination as their final choice (Add vacation).
+- Compare with another destination.
+- Go back to search results
 
 
 ## 3\. Tech Stack

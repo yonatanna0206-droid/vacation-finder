@@ -13,8 +13,11 @@ import {
 import type { Accommodation, SearchFilter } from './types';
 import { getAccommodations } from './services/vacationService';
 import { isFirebaseConfigured } from './services/firebase';
+import Register from './components/Register';
 
 export default function App() {
+  // 'register' is set as the default startup screen
+  const [currentScreen, setCurrentScreen] = useState<'register' | 'vacations'>('register');
   const [properties, setProperties] = useState<Accommodation[]>([]);
   const [loading, setLoading] = useState(true);
   const [filter, setFilter] = useState<SearchFilter>({
@@ -44,16 +47,31 @@ export default function App() {
     loadProperties(filter);
   };
 
+  // If the user is on the register screen, render Screen 1 (Register) as the startup page
+  if (currentScreen === 'register') {
+    return (
+      <Register onNavigateToVacations={() => setCurrentScreen('vacations')} />
+    );
+  }
+
   return (
     <div className="min-h-screen bg-slate-50 text-slate-800">
       {/* Top Navigation */}
       <header className="border-b border-slate-200 bg-white">
         <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <Palmtree className="w-7 h-7 text-blue-600" />
-            <span className="text-xl font-bold tracking-tight text-slate-900">
-              VacationFinder
-            </span>
+          <div className="flex items-center gap-4">
+            <div className="flex items-center gap-2">
+              <Palmtree className="w-7 h-7 text-blue-600" />
+              <span className="text-xl font-bold tracking-tight text-slate-900">
+                VacationFinder
+              </span>
+            </div>
+            <button
+              onClick={() => setCurrentScreen('register')}
+              className="text-xs text-blue-600 hover:text-blue-800 underline cursor-pointer"
+            >
+              ← Back to Register Page
+            </button>
           </div>
 
           {/* Backend Status indicator */}
